@@ -1,4 +1,4 @@
-# library-management-system Project
+# Library Management System Project
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
