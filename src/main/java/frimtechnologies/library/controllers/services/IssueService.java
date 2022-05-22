@@ -7,6 +7,7 @@ import frimtechnologies.library.domains.Student;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.ws.rs.WebApplicationException;
+import java.util.List;
 
 @ApplicationScoped
 public class IssueService {
@@ -36,5 +37,9 @@ public class IssueService {
         issue.status = "RETURNED";
 
         return issue;
+    }
+
+    public List<IssueBook> get(String status){
+        return IssueBook.list("status", status);
     }
 }
